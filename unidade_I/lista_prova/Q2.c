@@ -11,7 +11,7 @@ int diasDeAula(int dia, int mes, int ano){
     ultimoAno *= 365;
     ultimoMes *= 30;
     ultimoDia += ultimoMes + ultimoAno;
-    int dias = (ultimoDia - dia)/7;
+    int dias = 2*(ultimoDia - dia)/7;
     return dias;
 }
 

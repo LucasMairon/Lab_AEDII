@@ -10,7 +10,7 @@
 
 int isPitagorico(int limite){
     int a, b, i, j, c;
-    for(i = 1; i <=limite; i++){
+    for(i = 1; i <= limite; i++){
         for(j = 1; j <= limite; j++){
             
             a = pow(i,2);

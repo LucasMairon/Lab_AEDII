@@ -22,7 +22,7 @@ int inverterNumeros(int inverter){
 
 int main(){
     int inverter = 987654321, invertido = 0;
-    printf("inverter: %d\n", inverter);
-    printf("invertido: %d\n", inverterNumeros(inverter));
-    printf("invertido Recursivo: %d\n", inverterNumerosRecursivo(inverter, invertido));
+    printf("numero a inverter: %d\n", inverter);
+    printf("numero invertido: %d\n", inverterNumeros(inverter));
+    printf("numero invertido de forma Recursiva: %d\n", inverterNumerosRecursivo(inverter, invertido));
 }
