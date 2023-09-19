@@ -2,7 +2,7 @@ typedef struct listaContatos ListaContatos;
 typedef struct contato Contato;
 typedef unsigned long long int numeroGrande;
 
-int multiplicacao(numeroGrande key);
+int hash_multiplicacao(numeroGrande key);
 
 int concatenaa(char* nome);
 

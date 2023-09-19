@@ -31,7 +31,7 @@ int concatenaa(char* nome){
 }
 
 
-int multiplicacao(numeroGrande key){
+int hash_multiplicacao(numeroGrande key){
   key *= key;
   int digits = ceil(log2((numeroGrande)540000 * 540000));
     int signif = ceil(log2(SIZE_HASH_TABLE - 1));
@@ -44,26 +44,21 @@ int multiplicacao(numeroGrande key){
 }
 
 
-Contato* Preencher_dados(char* nome, char* email,char* telefone){
-  Contato* novo = (Contato*)malloc(sizeof(Contato));
-  strcpy(novo->nome,nome);
-  strcpy(novo->email,email);
-  strcpy(novo->telefone,telefone);
-  return novo;
-}
-
-
 ListaContatos* criar_contato(char* nome, char* email,char* telefone){
-  ListaContatos* novo = (ListaContatos*)malloc(sizeof(ListaContatos));
-  novo->info = Preencher_dados(nome, email,telefone);
-  novo->prox = NULL;
-  novo->ant = NULL;
-  return novo;
+  ListaContatos* listaContatos = (ListaContatos*)malloc(sizeof(ListaContatos));
+  Contato* contato = (Contato*)malloc(sizeof(Contato));
+  strcpy(contato->nome,nome);
+  strcpy(contato->email,email);
+  strcpy(contato->telefone,telefone);
+  listaContatos->info = contato;
+  listaContatos->prox = NULL;
+  listaContatos->ant = NULL;
+  return listaContatos;
 }
 
 
 void inserir(ListaContatos** hashAgenda, ListaContatos* contato){
-  int key = multiplicacao(concatenaa(contato->info->nome));
+  int key = hash_multiplicacao(concatenaa(contato->info->nome));
   
   if(hashAgenda[key] == NULL){
     hashAgenda[key] = contato;
@@ -127,7 +122,7 @@ void ler_agenda(ListaContatos** hashAgenda){
 
 
 ListaContatos* busca(ListaContatos** agenda, char* nome){
-  int key = multiplicacao(concatenaa(nome));
+  int key = hash_multiplicacao(concatenaa(nome));
 
   if(agenda[key] == NULL){
     printf("O contato não está na agenda\n");
@@ -149,7 +144,7 @@ ListaContatos* busca(ListaContatos** agenda, char* nome){
 ListaContatos* removeContatos(ListaContatos** agenda,char* nome){
   ListaContatos* ListaContatos = busca(agenda, nome);
   if(ListaContatos->ant == NULL){  
-    int key = multiplicacao(concatenaa(nome));
+    int key = hash_multiplicacao(concatenaa(nome));
     if(ListaContatos->prox == NULL){
       agenda[key] = NULL;
     }else{
