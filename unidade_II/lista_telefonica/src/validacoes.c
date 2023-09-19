@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<regex.h>
+#include<stdlib.h>
 #include<validacoes.h>
 
 const short int FLAG = 1;
