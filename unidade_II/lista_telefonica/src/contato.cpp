@@ -103,7 +103,7 @@ void exportar(ListaContatos** hashAgenda){
 void ler_agenda(ListaContatos** hashAgenda){
   char linha[MAX_CHAR], nome[MAX_CHAR], email[MAX_CHAR], telefone[MAX_CHAR];
   //int key; 
-  FILE* agenda = fopen("/workspaces/Lab_AEDII/unidade_II/lista_telefonica/date/agenda.txt", "r");
+  FILE* agenda = fopen("/workspaces/Lab_AEDII/unidade_II/lista_telefonica/data/agenda.txt", "r");
   if(agenda == NULL){
     printf("erro na abertura do arquivo!!\n");
     exit(1);
@@ -165,7 +165,7 @@ ListaContatos* removeContatos(ListaContatos** agenda,char* nome){
 
 
 void iniciar_agenda(ListaContatos** agenda){
-    for(int i = 0; i<SIZE_HASH_TABLE; i++){
-      agenda[i] = NULL;
-    }
+  for(int i = 0; i<SIZE_HASH_TABLE; i++){
+    agenda[i] = NULL;
+  }
 }
