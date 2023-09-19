@@ -1,0 +1,1 @@
+int isvalidString(char* string,const char* PADRAO,const int FLAG);
