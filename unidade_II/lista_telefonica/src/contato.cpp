@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <math.h>
-#include <contato.h>
+#include "contato.h"
 
 #define MAX_CHAR 100
 #define SIZE_HASH_TABLE 32
@@ -20,7 +20,7 @@ struct listaContatos{
 };
 
 
-int concatenaa(char* nome){
+int concatena(char* nome){
   int count = 0;
   int soma = nome[count];
   while(nome[count] != 0){
@@ -58,7 +58,7 @@ ListaContatos* criar_contato(char* nome, char* email,char* telefone){
 
 
 void inserir(ListaContatos** hashAgenda, ListaContatos* contato){
-  int key = hash_multiplicacao(concatenaa(contato->info->nome));
+  int key = hash_multiplicacao(concatena(contato->info->nome));
   
   if(hashAgenda[key] == NULL){
     hashAgenda[key] = contato;
@@ -122,7 +122,7 @@ void ler_agenda(ListaContatos** hashAgenda){
 
 
 ListaContatos* busca(ListaContatos** agenda, char* nome){
-  int key = hash_multiplicacao(concatenaa(nome));
+  int key = hash_multiplicacao(concatena(nome));
 
   if(agenda[key] == NULL){
     printf("O contato não está na agenda\n");
@@ -144,7 +144,7 @@ ListaContatos* busca(ListaContatos** agenda, char* nome){
 ListaContatos* removeContatos(ListaContatos** agenda,char* nome){
   ListaContatos* ListaContatos = busca(agenda, nome);
   if(ListaContatos->ant == NULL){  
-    int key = hash_multiplicacao(concatenaa(nome));
+    int key = hash_multiplicacao(concatena(nome));
     if(ListaContatos->prox == NULL){
       agenda[key] = NULL;
     }else{

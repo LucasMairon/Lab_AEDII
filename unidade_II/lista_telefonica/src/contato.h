@@ -4,9 +4,7 @@ typedef unsigned long long int numeroGrande;
 
 int hash_multiplicacao(numeroGrande key);
 
-int concatenaa(char* nome);
-
-Contato* Preencher_dados(char* nome, char* email,char* telefone);
+int concatena(char* nome);
 
 ListaContatos* criar_contato(char* nome, char* email,char* telefone);
 
