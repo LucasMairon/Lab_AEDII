@@ -34,13 +34,13 @@ int concatena(char* nome){
 int hash_multiplicacao(numeroGrande key){
   key *= key;
   int digits = ceil(log2((numeroGrande)540000 * 540000));
-    int signif = ceil(log2(SIZE_HASH_TABLE - 1));
-    float remover = digits - signif;
-    int digitMask = (int)ceil(remover / 2);
-    numeroGrande mask = ((SIZE_HASH_TABLE-1) << digitMask);
-    key = key & mask;
-    key = (key >> digitMask);
-    return key;
+  int signif = ceil(log2(SIZE_HASH_TABLE - 1));
+  float remover = digits - signif;
+  int digitMask = (int)ceil(remover / 2);
+  numeroGrande mask = ((SIZE_HASH_TABLE-1) << digitMask);
+  key = key & mask;
+  key = (key >> digitMask);
+  return key;
 }
 
 
@@ -167,5 +167,22 @@ ListaContatos* removeContatos(ListaContatos** agenda,char* nome){
 void iniciar_agenda(ListaContatos** agenda){
   for(int i = 0; i<SIZE_HASH_TABLE; i++){
     agenda[i] = NULL;
+  }
+}
+
+
+void liberar_agenda(ListaContatos**agenda){
+  ListaContatos* aux;
+  int i = 0;
+
+  for(; i<SIZE_HASH_TABLE; i++){
+    if(agenda[i] != NULL){
+     aux = agenda[i];
+     while(aux->prox != NULL){
+      aux = aux->prox;
+      free(aux->ant);
+     }
+     free(aux);
+    }
   }
 }
