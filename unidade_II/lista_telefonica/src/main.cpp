@@ -14,7 +14,7 @@ int main(){
     int escolha, i =0;
     char nome[MAX_CHAR],email[MAX_CHAR],telefone[MAX_CHAR];
     do{
-    escolha = menu();
+        escolha = menu();
     
     switch(escolha){
         case 1:
@@ -53,15 +53,22 @@ int main(){
         case 5:
             printf("Remover contato:\n");
             printf("digite o nome do contato que deseja remover: ");
-            scanf(" %[^\n]",nome);
+            scanf(" %[^\n]", nome);
             listaDeContatos = removeContatos(hashAgenda,nome);
-            free(listaDeContatos->info);
-            free(listaDeContatos);
-            printf("contato removido com sucesso");
+
+            if(listaDeContatos != NULL){
+                free(listaDeContatos->info);
+                free(listaDeContatos);
+                printf("contato removido com sucesso");
+            }else{
+                printf("O contato não estar na lista");
+            }
         break;
 
         case 6:
-            //em producao
+            // printf("digite o nome do contato que deseja editar: ");
+            // scanf(" %[^\n]", nome);
+            // editar(hashAgenda, nome);
         break;
 
         case 7:
@@ -70,6 +77,7 @@ int main(){
         break;
         
     }
+
     }while(escolha != 7);
     
     liberar_agenda(hashAgenda);
@@ -87,7 +95,7 @@ int menu(){
     printf("6 - Editar contato\n");
     printf("7 - Sair\n");
     printf("digite uma opcao:");
-    scanf("%d",&escolha);
+    scanf("%d" ,&escolha);
     printf("\n");
     return escolha;
 }

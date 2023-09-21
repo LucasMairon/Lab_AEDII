@@ -152,23 +152,34 @@ ListaContatos* busca(ListaContatos** agenda, char* nome){
 
 
 ListaContatos* removeContatos(ListaContatos** agenda,char* nome){
-  ListaContatos* ListaContatos = busca(agenda, nome);
-  if(ListaContatos->ant == NULL){  
+  ListaContatos* aux;
+  ListaContatos* listaDeContatos = busca(agenda, nome);
+  
+  if(listaDeContatos == NULL){
+    return NULL;
+  }
+
+  if(listaDeContatos->ant == NULL){  
     int key = hash_multiplicacao(concatena(nome));
-    if(ListaContatos->prox == NULL){
+    if(listaDeContatos->prox == NULL){
+      aux = agenda[key];
       agenda[key] = NULL;
+      return aux;
     }else{
-    agenda[key] = ListaContatos->prox;
-    ListaContatos->prox->ant = NULL;
-    return ListaContatos;
+      agenda[key] = listaDeContatos->prox;
+      listaDeContatos->prox->ant = NULL;
+      return listaDeContatos;
     }
-  }else if(ListaContatos->prox == NULL){
-    ListaContatos->ant->prox = NULL;
-    return ListaContatos;
+  }else if(listaDeContatos->prox == NULL){
+    listaDeContatos->ant->prox = NULL;
+    listaDeContatos->ant = NULL;
+    return listaDeContatos;
   }else{
-    ListaContatos->ant->prox = ListaContatos->prox;
-    ListaContatos->prox->ant = ListaContatos->ant;
-    return ListaContatos;
+    listaDeContatos->ant->prox = listaDeContatos->prox;
+    listaDeContatos->prox->ant = listaDeContatos->ant;
+    listaDeContatos->ant = NULL;
+    listaDeContatos->prox = NULL;
+    return listaDeContatos;
   }
   return NULL;
 }
