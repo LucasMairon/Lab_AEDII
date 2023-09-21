@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<regex.h>
 #include<stdlib.h>
-#include<validacoes.h>
+#include "validacoes.h"
 
 const short int FLAG = 1;
 const char NOME_PADRAO[] = "[a-zA-Z]+";
@@ -26,6 +26,7 @@ int isvalidString(char* string,const char* PADRAO,const int FLAG){
         return 0;
     }
 }
+
 
 int isvalidNumber(char* numero,const char* PADRAO,const int FLAG){
     regex_t regex;
