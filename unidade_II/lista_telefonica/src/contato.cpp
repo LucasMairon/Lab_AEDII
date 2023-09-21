@@ -94,7 +94,7 @@ void exportar(ListaContatos** hashAgenda){
 
   for(i = 0; i<SIZE_HASH_TABLE; i++)
      for(aux = hashAgenda[i]; aux!= NULL; aux = aux->prox)
-       fprintf(agenda,"nome: %s\nemail: %s\ntell: %s\n",aux->info->nome,aux->info->email, aux->info->telefone);
+       fprintf(agenda,"nome: %s\nemail: %s\ntelefone: %s\n",aux->info->nome,aux->info->email, aux->info->telefone);
 
   fclose(agenda);
 }
@@ -114,7 +114,7 @@ void ler_agenda(ListaContatos** hashAgenda){
     fgets(linha,MAX_CHAR,agenda);
     sscanf(linha,"email: %[^\n]",email);
     fgets(linha,MAX_CHAR,agenda);
-    sscanf(linha,"telefone: %[`\n]", telefone);
+    sscanf(linha,"telefone: %[^\n]", telefone);
 
     inserir(hashAgenda ,criar_contato(nome, email,telefone));
   }

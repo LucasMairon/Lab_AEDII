@@ -77,7 +77,6 @@ int main(){
     }while(escolha != 7);
     
     liberar_agenda(hashAgenda);
-
 }
 
 
