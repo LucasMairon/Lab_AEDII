@@ -2,7 +2,6 @@
 #include"validacoes.c"
 #include<stdio.h>
 
-
 #define MAX_CHAR 100
 
 int menu(){
