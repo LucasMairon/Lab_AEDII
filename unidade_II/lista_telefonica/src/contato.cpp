@@ -64,10 +64,9 @@ void inserir(ListaContatos** hashAgenda, ListaContatos* contato){
     hashAgenda[key] = contato;
   }else{
     ListaContatos* aux = hashAgenda[key];
-    printf("fazer a tratativa aqui!!!\n");
     for(; aux->prox != NULL; aux = aux->prox){
-      
-    }
+  }
+
   aux->prox = contato;
   contato->ant = aux;
   contato->prox = NULL;
@@ -75,11 +74,22 @@ void inserir(ListaContatos** hashAgenda, ListaContatos* contato){
 }
 
 
-void listar_agenda(ListaContatos* contato){
-  ListaContatos* aux = contato;
-  for(; aux != NULL; aux = aux->prox){  
-  printf("nome: %s\nemail: %s\ntell: %s\n",aux->info->nome,aux->info->email, aux->info->telefone);
+void listar_contato(ListaContatos* contato){
+  if (contato != NULL){
+   printf("nome: %s\nemail: %s\ntelelefone: %s\n",contato->info->nome,contato->info->email, contato->info->telefone); 
+  }
+}
+
+
+void listar_agenda(ListaContatos** agenda){
+  ListaContatos* contato; 
+  int i =0;
+  for(; i<SIZE_HASH_TABLE; i++){
+    contato = agenda[i];
+    for(; contato != NULL; contato = contato->prox){
+      listar_contato(contato);
     }
+  }
 }
 
 

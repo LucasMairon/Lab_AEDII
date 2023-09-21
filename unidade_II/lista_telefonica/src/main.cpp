@@ -33,11 +33,8 @@ int main(){
 
         case 2:
             printf("Listar agenda:\n");
-            for ( i = 0; i < SIZE_HASH_TABLE; i++){
-                listar_agenda(hashAgenda[i]); 
-            }
+            listar_agenda(hashAgenda); 
             break;
-
         case 3:
             printf("Exportar contatos:\n");
             exportar(hashAgenda);
@@ -50,8 +47,7 @@ int main(){
             printf("digite o nome do contato que deseja buscar: ");
             scanf(" %[^\n]",nome);
             listaDeContatos = busca(hashAgenda,nome);
-            //printf("nome do contato: %s\ntelefone do contato: %s\nemail do contato: %s\n",listaDeContatos->info->nome,listaDeContatos->info->email,listaDeContatos->info->telefone);
-            listar_agenda(listaDeContatos);
+            listar_contato(listaDeContatos);
         break;
 
         case 5:
@@ -90,7 +86,8 @@ int menu(){
     printf("5 - Remover contato\n");
     printf("6 - Editar contato\n");
     printf("7 - Sair\n");
-    printf("digite uma opcao:\n");
+    printf("digite uma opcao:");
     scanf("%d",&escolha);
+    printf("\n");
     return escolha;
 }
