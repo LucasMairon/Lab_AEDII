@@ -79,7 +79,7 @@ int main(){
     }
 
     }while(escolha != 7);
-    
+    salvar_agenda(hashAgenda);
     liberar_agenda(hashAgenda);
 }
 

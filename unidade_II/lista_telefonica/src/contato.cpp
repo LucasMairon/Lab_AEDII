@@ -131,6 +131,23 @@ void ler_agenda(ListaContatos** hashAgenda){
 }
 
 
+void salvar_agenda(ListaContatos** hashAgenda){
+  int i;
+  ListaContatos* aux;
+  FILE* agenda = fopen("/workspaces/Lab_AEDII/unidade_II/lista_telefonica/data/agenda.txt", "w");
+    if(agenda == NULL){
+    printf("erro na abertura do arquivo!!\n");
+    exit(1);
+  }
+
+  for(i = 0; i<SIZE_HASH_TABLE; i++)
+     for(aux = hashAgenda[i]; aux!= NULL; aux = aux->prox)
+       fprintf(agenda,"nome: %s\nemail: %s\ntelefone: %s\n",aux->info->nome,aux->info->email, aux->info->telefone);
+
+  fclose(agenda);
+}
+
+
 ListaContatos* busca(ListaContatos** agenda, char* nome){
   int key = hash_multiplicacao(concatena(nome));
 
