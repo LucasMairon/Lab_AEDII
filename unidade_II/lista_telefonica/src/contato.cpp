@@ -154,11 +154,11 @@ ListaContatos* busca(ListaContatos** agenda, char* nome){
   if(agenda[key] == NULL){
     printf("O contato não está na agenda\n");
     return NULL;
-  }else if(agenda[key]->prox == NULL){
+  }else if(agenda[key]->ant == NULL && agenda[key]->prox == NULL){
      return agenda[key];
   }else{
     ListaContatos* aux = agenda[key];
-    for(; aux !=NULL; aux = aux->prox){
+    for(; aux != NULL; aux = aux->prox){
       if(!strcmp(nome, aux->info->nome)){
         return aux;
       }

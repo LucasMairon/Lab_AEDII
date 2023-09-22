@@ -4,6 +4,9 @@ telefone: 84999999999
 nome: costa
 email: lidiana@gmail.com
 telefone: 84999999999
+nome: mateus
+email: mateus@gmail.com
+telefone: 84999999999
 nome: lidiana
 email: lidi@gmail.com
 telefone: 84999999999
@@ -16,6 +19,6 @@ telefone: 84999999999
 nome: lucas mairon 
 email: lidi@gmail.com
 telefone: 84999999999
-nome: lidiana costa 
-email: lidi@gmail.com
+nome: lidiana costa
+email: lidiana@gmail.com
 telefone: 84999999999

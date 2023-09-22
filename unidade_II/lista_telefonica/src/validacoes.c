@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<regex.h>
 #include<stdlib.h>
+#include <ctype.h>
 #include "validacoes.h"
 
 const short int FLAG = 1;
@@ -45,4 +46,19 @@ int isvalidNumber(char* numero,const char* PADRAO,const int FLAG){
         printf("erro na verificacao,tente novamente\n");
         return 0;
     }
+}
+
+int capturaNumero(){
+    char* numero;
+    int i = 0;
+    printf("digite uma opcao:");
+    scanf(" %[^\n]",numero);
+
+    while (numero[i] != '\0'){
+        if (!isdigit(numero[i])){
+            return 0;
+        }
+        i++;
+    }
+    return(atoi(numero)); 
 }
