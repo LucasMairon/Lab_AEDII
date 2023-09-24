@@ -12,12 +12,14 @@ int main(){
     iniciar_agenda(hashAgenda);
     ler_agenda(hashAgenda);
     ListaContatos* listaDeContatos = NULL;
-    int escolha;
+    int escolha = 0;
     char* nome;
+    nome = (char*)malloc(sizeof(char)*MAX_CHAR);
     char* email;
+    email = (char*)malloc(sizeof(char)*MAX_CHAR);
     char* telefone;
-    char caminho[MAX_CHAR];
-    
+    telefone = (char*)malloc(sizeof(char)*MAX_CHAR);
+    char* caminho;
     do{
         escolha = menu();
 
@@ -25,11 +27,11 @@ int main(){
         case 1:
             printf("\nCriar contato:\n");
             printf("digite o nome do contato: ");
-            nome = capturaNome();
-            printf("digite o email do contato(email@dominio.complemento.complementoopcional): ");
-            email = capturaEmail(EMAIL_PADRAO,FLAG);
-            printf("digite o telefone do contato(formato:(dd) nnnnn-nnnn): ");
-            telefone = capturaTelefone();
+            capturaNome(nome);
+            printf("digite o email do contato(email@dominio.com.complementoopcional): ");
+            capturaEmail(EMAIL_PADRAO,FLAG,email);
+            printf("digite o telefone do contato(formato:ddnnnnnnnnn): ");
+            capturaTelefone(telefone);
             listaDeContatos = criar_contato(nome,email,telefone);
             inserir(hashAgenda,listaDeContatos);
             printf("contato inserido com sucesso");
@@ -52,7 +54,7 @@ int main(){
         case 4:
             printf("\nBuscar contato:\n");
             printf("digite o nome do contato que deseja buscar: ");
-            nome = capturaNome();
+            capturaNome(nome);
             listaDeContatos = busca(hashAgenda,nome);
             listar_contato(listaDeContatos);
         break;
@@ -60,15 +62,15 @@ int main(){
         case 5:
             printf("\nRemover contato:\n");
             printf("digite o nome do contato que deseja remover: ");
-            nome = capturaNome();
+            capturaNome(nome);
             listaDeContatos = removeContatos(hashAgenda,nome);
 
             if(listaDeContatos != NULL){
                 free(listaDeContatos->info);
                 free(listaDeContatos);
-                printf("contato removido com sucesso\n");
+                printf("\ncontato removido com sucesso\n");
             }else{
-                printf("O contato não está na lista");
+                printf("\nO contato não está na lista\n");
             }
         break;
 
@@ -76,21 +78,18 @@ int main(){
             // printf("digite o nome do contato que deseja editar: ");
             // scanf(" %[^\n]", nome);
             // editar(hashAgenda, nome);
-        break;
-
+          break;
         case 7:
-            printf("\nSair:\n");
+            printf("Sair:\n");
+            salvar_agenda(hashAgenda);
+            liberar_agenda(hashAgenda);
             printf("execução finalizada\n");
-        break;
+          break;
         default:
-            printf("opção invalida");
-        break;
-        
+          printf("opção invalida\n");
+          break;
     }
-
     }while(escolha != 7);
-    salvar_agenda(hashAgenda);
-    liberar_agenda(hashAgenda);
 }
 
 

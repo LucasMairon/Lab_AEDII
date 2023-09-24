@@ -1,8 +1,9 @@
 #include<regex.h>
 #include<stdio.h>
 #include<stdlib.h>
-#include<string.h>
 #include<ctype.h>
+#include<string.h>
+#include"validacoes.h"
 
 #define MAX_CHAR 100
 
@@ -27,25 +28,20 @@ int isvalidEmail(char* string,const char* PADRAO,const int FLAG){
     
 }
 
-char* capturaEmail(const char* PADRAO,const int FLAG){
-    char* string = (char*)malloc(sizeof(char)*MAX_CHAR);
+void capturaEmail(const char* PADRAO,const int FLAG,char* email){
     
-    scanf(" %[^\n]",string);
+    scanf(" %[^\n]",email);
     int cont = 0;
-    int valor = isvalidEmail(string,PADRAO,FLAG);
+    int valor = isvalidEmail(email,PADRAO,FLAG);
     while(valor != 1){
-            printf("padrao inválido, tente novamente: ");
-            scanf(" %[^\n]",string);
-            valor = isvalidEmail(string,PADRAO,FLAG);
-            cont++;
-    
+      printf("padrao inválido, tente novamente: ");
+      scanf(" %[^\n]",email);
+      valor = isvalidEmail(email,PADRAO,FLAG);
+      cont++;
     }
-   if(cont == 1){
-        return string;
-   }else if(cont > 1){
+    if(cont > 1){
         printf("validação aceita\n");
-        return string;
-   }
+    }
    
 }
 
@@ -71,26 +67,22 @@ int isvalidName(char *string){
   return 1;
 }
 
-char* capturaNome(){
-    char* string = (char*)malloc(sizeof(char)*MAX_CHAR);
+void capturaNome(char* string){
     
     scanf(" %[^\n]",string);
     int cont = 0;
     int valor = isvalidName(string);
     while(valor != 1){
             
-                printf("padrao inválido, tente novamente: ");
-                scanf(" %[^\n]",string);
-                valor = isvalidName(string);
-                cont++;
+      printf("padrao inválido, tente novamente: ");
+      scanf(" %[^\n]",string);
+      valor = isvalidName(string);
+      cont++;
     
     }
-   if(cont == 1){
-        return string;
-   }else if(cont > 1){
+    if(cont > 1){
         printf("validação aceita\n");
-        return string;
-   }
+    }
 }
 
 int isvalidNumber(char *numero){
@@ -105,28 +97,24 @@ int isvalidNumber(char *numero){
   return 1;
 }
 
-char* capturaTelefone(){
-  char *numero = (char *)malloc(sizeof(char) * MAX_CHAR);
+void capturaTelefone(char* telefone){
 
-  int i = 0, cont = 1;
+  int cont = 1;
 
-  scanf(" %[^\n]", numero);
+  scanf(" %[^\n]", telefone);
 
-  int valor = isvalidNumber(numero);
-  int tam = strlen(numero);
+  int valor = isvalidNumber(telefone);
+  int tam = strlen(telefone);
 
   while (valor != 1 || tam != 11) {
     printf("padrao inválido, tente novamente: ");
-    scanf(" %[^\n]", numero);
-    valor = isvalidNumber(numero);
-    tam = strlen(numero);
+    scanf(" %[^\n]", telefone);
+    valor = isvalidNumber(telefone);
+    tam = strlen(telefone);
     cont++;
   }
-
-  if (cont == 1) {
-    return numero;
-  } else {
-    printf("validação aceita\n");
-    return numero;
+  if(cont > 1){
+        printf("validação aceita\n");
   }
+
 }
