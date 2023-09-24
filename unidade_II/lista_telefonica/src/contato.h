@@ -1,5 +1,5 @@
 typedef struct contato Contato;
-typedef struct listaContatos ListaContatos;
+typedef struct listacontatos ListaContatos;
 typedef unsigned long long int numeroGrande;
 
 int hash_multiplicacao(numeroGrande key);

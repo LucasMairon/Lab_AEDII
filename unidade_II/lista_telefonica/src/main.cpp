@@ -1,30 +1,35 @@
 #include"contato.cpp"
-#include"validacoes.c"
-#include<stdio.h>
-
-#define MAX_CHAR 100
+#include"validacoes.cpp"
+#include<locale.h>
 
 int menu();
 
 int main(){
+    system("clear");
+    setlocale(LC_ALL,"Portuguese");
+
     ListaContatos* hashAgenda[SIZE_HASH_TABLE];
     iniciar_agenda(hashAgenda);
     ler_agenda(hashAgenda);
     ListaContatos* listaDeContatos = NULL;
-    int escolha, i =0;
-    char nome[MAX_CHAR],email[MAX_CHAR],telefone[MAX_CHAR];
+    int escolha;
+    char* nome;
+    char* email;
+    char* telefone;
+    char caminho[MAX_CHAR];
+    
     do{
         escolha = menu();
-    
+
     switch(escolha){
         case 1:
-            printf("Criar contato:\n");
+            printf("\nCriar contato:\n");
             printf("digite o nome do contato: ");
-            scanf(" %[^\n]",nome);
+            nome = capturaNome();
             printf("digite o email do contato(email@dominio.complemento.complementoopcional): ");
-            scanf(" %[^\n]",email);
+            email = capturaEmail(EMAIL_PADRAO,FLAG);
             printf("digite o telefone do contato(formato:(dd) nnnnn-nnnn): ");
-            scanf(" %[^\n]",telefone);
+            telefone = capturaTelefone();
             listaDeContatos = criar_contato(nome,email,telefone);
             inserir(hashAgenda,listaDeContatos);
             printf("contato inserido com sucesso");
@@ -32,36 +37,38 @@ int main(){
         break;
 
         case 2:
-            printf("Listar agenda:\n");
+            printf("\nListar agenda:\n");
             listar_agenda(hashAgenda); 
             break;
         case 3:
-            printf("Exportar contatos:\n");
-            exportar(hashAgenda);
-            printf("seus contatos foram exportados para: ");
+            printf("\nExportar contatos:\n");
+            printf("digite o caminho para onde deseja exportar seus contatos(use uma pasta que já existe): ");
+            scanf(" %[^\n]",caminho);
+            exportar(hashAgenda,caminho);
+            printf("seus contatos foram exportados para: %s",caminho);
 
         break;
 
         case 4:
-            printf("Buscar contato:\n");
+            printf("\nBuscar contato:\n");
             printf("digite o nome do contato que deseja buscar: ");
-            scanf(" %[^\n]",nome);
+            nome = capturaNome();
             listaDeContatos = busca(hashAgenda,nome);
             listar_contato(listaDeContatos);
         break;
 
         case 5:
-            printf("Remover contato:\n");
+            printf("\nRemover contato:\n");
             printf("digite o nome do contato que deseja remover: ");
-            scanf(" %[^\n]", nome);
+            nome = capturaNome();
             listaDeContatos = removeContatos(hashAgenda,nome);
 
             if(listaDeContatos != NULL){
                 free(listaDeContatos->info);
                 free(listaDeContatos);
-                printf("contato removido com sucesso");
+                printf("contato removido com sucesso\n");
             }else{
-                printf("O contato não estar na lista");
+                printf("O contato não está na lista");
             }
         break;
 
@@ -72,8 +79,11 @@ int main(){
         break;
 
         case 7:
-            printf("Sair:\n");
+            printf("\nSair:\n");
             printf("execução finalizada\n");
+        break;
+        default:
+            printf("opção invalida");
         break;
         
     }
@@ -85,7 +95,6 @@ int main(){
 
 
 int menu(){
-    int escolha;
     printf("\n");
     printf("1 - Criar contato\n");
     printf("2 - Listar agenda\n");
@@ -94,8 +103,7 @@ int menu(){
     printf("5 - Remover contato\n");
     printf("6 - Editar contato\n");
     printf("7 - Sair\n");
-    printf("digite uma opcao:");
-    scanf("%d" ,&escolha);
-    printf("\n");
-    return escolha;
+    
+    return capturaNumero();
+    
 }

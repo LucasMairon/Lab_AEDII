@@ -13,7 +13,7 @@ struct contato{
   char telefone[MAX_CHAR];
 };
 
-struct listaContatos{
+struct listacontatos{
   Contato* info;
   ListaContatos* prox;
   ListaContatos* ant;
@@ -87,26 +87,27 @@ void listar_agenda(ListaContatos** agenda){
   for(; i<SIZE_HASH_TABLE; i++){
     contato = agenda[i];
     for(; contato != NULL; contato = contato->prox){
+      printf("\n");
       listar_contato(contato);
     }
   }
 }
 
 
-void exportar(ListaContatos** hashAgenda){
+void exportar(ListaContatos** hashAgenda, char* caminho){
   int i;
   ListaContatos* aux;
-  FILE* agenda = fopen("/workspaces/Lab_AEDII/unidade_II/lista_telefonica/src/output/agenda.txt", "w");
-    if(agenda == NULL){
+  FILE* arquivoAgenda = fopen(caminho, "w");
+    if(arquivoAgenda == NULL){
     printf("erro na abertura do arquivo!!\n");
     exit(1);
   }
-
+  fprintf(arquivoAgenda,"Contatos:\n");
   for(i = 0; i<SIZE_HASH_TABLE; i++)
      for(aux = hashAgenda[i]; aux!= NULL; aux = aux->prox)
-       fprintf(agenda,"nome: %s\nemail: %s\ntelefone: %s\n",aux->info->nome,aux->info->email, aux->info->telefone);
+       fprintf(arquivoAgenda,"nome: %s\nemail: %s\ntelefone: %s\n",aux->info->nome,aux->info->email, aux->info->telefone);
 
-  fclose(agenda);
+  fclose(arquivoAgenda);
 }
 
 
