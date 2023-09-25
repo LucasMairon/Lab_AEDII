@@ -48,10 +48,16 @@ void capturaEmail(const char* PADRAO,const int FLAG,char* email){
 
 int capturaNumero(){
     char numero[MAX_CHAR];
-    printf("digite uma opção:");
+    int i = 0;
+    printf("digite uma opcao: ");
     scanf(" %[^\n]",numero);
-    return(atoi(numero));
-    
+    while (numero[i] != '\0'){
+        if (!isdigit(numero[i])){
+            return 0;
+        }
+        i++;
+    }
+    return(atoi(numero)); 
 }
 
 
