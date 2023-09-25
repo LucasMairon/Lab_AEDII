@@ -20,7 +20,7 @@ int main()
   char *telefone;
   telefone = (char *)malloc(sizeof(char) * MAX_CHAR);
   char *caminho;
-    caminho = (char*)malloc(sizeof(char)*MAX_CHAR);
+  caminho = (char*)malloc(sizeof(char)*MAX_CHAR);
   do
   {
     escolha = menu();
@@ -28,6 +28,7 @@ int main()
     switch (escolha)
     {
     case 1:
+
       printf("\nCriar contato:\n");
       printf("digite o nome do contato: ");
       capturaNome(nome);
@@ -39,52 +40,54 @@ int main()
       inserir(hashAgenda, listaDeContatos);
       printf("contato inserido com sucesso");
 
-      break;
-
+    break;
     case 2:
+
       printf("\nListar agenda:\n");
       listar_agenda(hashAgenda);
-      break;
+    break;
     case 3:
+
       printf("\nExportar contatos:\n");
       printf("digite o caminho para onde deseja exportar seus contatos(use uma pasta que já existe): ");
       scanf(" %[^\n]", caminho);
       exportar(hashAgenda, caminho);
       printf("seus contatos foram exportados para: %s", caminho);
 
-      break;
-
+    break;
     case 4:
+
       printf("\nBuscar contato:\n");
       printf("digite o nome do contato que deseja buscar: ");
       capturaNome(nome);
       listaDeContatos = busca(hashAgenda, nome);
       listar_contato(listaDeContatos);
-      break;
-
+    break;
     case 5:
+
       printf("\nRemover contato:\n");
       printf("digite o nome do contato que deseja remover: ");
       capturaNome(nome);
       listaDeContatos = removeContatos(hashAgenda, nome);
 
-      if (listaDeContatos != NULL)
-      {
+      if (listaDeContatos != NULL){
         free(listaDeContatos->info);
         free(listaDeContatos);
         printf("\ncontato removido com sucesso\n");
       }
-      else
-      {
+      else{
         printf("\nO contato não está na lista\n");
       }
-      break;
+
+    break;
     case 6:
+
       printf("digite o nome do contato que deseja editar: ");
       capturaNome(nome);
       editar(hashAgenda, nome);
-      break;
+    break;
     case 7:
+
       printf("Sair:\n");
       salvar_agenda(hashAgenda);
       liberar_agenda(hashAgenda);
@@ -93,10 +96,10 @@ int main()
       free(telefone);
       free(caminho);
       printf("execução finalizada\n");
-      break;
+    break;
     default:
       printf("opção invalida\n");
-      break;
+    break;
     }
   } while (escolha != 7);
 }

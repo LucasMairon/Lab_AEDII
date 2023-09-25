@@ -233,13 +233,13 @@ void liberar_agenda(ListaContatos**agenda){
 
 void menu_editar(){
   printf("\n");
-  printf("menu de edição de contato\n");
-  printf("digite 1 para editar o nome\n");
-  printf("digite 2 para editar o email\n");
-  printf("digite 3 para editar o telefone\n");
-  printf("digite 4 para editar todas as informações\n");
-  printf("digite 5 para cancelar a ediçao\n");
-  printf("digite 6 para sair!\n");
+  printf("Menu de edição de contato:\n");
+  printf("1 - editar o nome\n");
+  printf("2 - editar o email\n");
+  printf("3 - editar o telefone\n");
+  printf("4 - editar todas as informações do contato\n");
+  printf("5 - cancelar a ediçao\n");
+  printf("6 - sair!\n");
 }
 
 
@@ -276,7 +276,7 @@ void editar(ListaContatos** agenda, char* nome){
       strcpy(contato->info->email, novoEmail);
       break;
     case 3:
-      printf("digite o telefone do contato(formato:(dd) nnnnn-nnnn): ");
+      printf("digite o telefone do contato(formato:ddnnnnnnnnn): ");
       capturaTelefone(novoTelefone);
       strcpy(contato->info->telefone, novoTelefone);
       break;
@@ -285,7 +285,7 @@ void editar(ListaContatos** agenda, char* nome){
       capturaNome(novoNome);
       printf("digite o novo email do contato(email@dominio.complemento.complementoopcional): ");
       capturaEmail(EMAIL_PADRAO, FLAG, novoEmail);
-      printf("digite o telefone do contato(formato:(dd) nnnnn-nnnn): ");
+      printf("digite o telefone do contato(formato:ddnnnnnnnnn): ");
       capturaTelefone(novoTelefone);
       r++;
       break;
@@ -305,10 +305,10 @@ void editar(ListaContatos** agenda, char* nome){
       printf("Dados:\n");
       printf("nome: %s\nemail: %s\ntelefone: %s\n", novoNome, novoEmail, novoTelefone);
       printf("\n");
-      printf("deseja fazer mais alguma alteração ?\nsim-1\nnão-2\n");
+      printf("deseja fazer mais alguma alteração ?\n1 - sim\n2 - não\n");
       opcao = capturaNumero();
       while(opcao != 1 && opcao != 2){
-        printf("deseja fazer mais alguma alteração ?\nsim-1\nnão-2\n");
+        printf("deseja fazer mais alguma alteração ?\n1 - sim\n2 - não\n");
         opcao = capturaNumero();
       }
 
