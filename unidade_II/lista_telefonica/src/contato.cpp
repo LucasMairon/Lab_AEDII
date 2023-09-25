@@ -115,7 +115,6 @@ void exportar(ListaContatos** hashAgenda, char* caminho){
 
 void ler_agenda(ListaContatos** hashAgenda){
   char linha[MAX_CHAR], nome[MAX_CHAR], email[MAX_CHAR], telefone[MAX_CHAR];
-  //int key; 
   FILE* agenda = fopen("/workspaces/Lab_AEDII/unidade_II/lista_telefonica/data/agenda.txt", "r");
   if(agenda == NULL){
     printf("erro na abertura do arquivo!!\n");
