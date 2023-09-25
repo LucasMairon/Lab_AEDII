@@ -3,6 +3,7 @@
 #include <string.h>
 #include <math.h>
 #include "contato.h"
+#include"validacoes.cpp"
 
 #define MAX_CHAR 100
 #define SIZE_HASH_TABLE 32
@@ -130,6 +131,7 @@ void ler_agenda(ListaContatos** hashAgenda){
 
     inserir(hashAgenda ,criar_contato(nome, email,telefone));
   }
+  fclose(agenda);
 }
 
 
@@ -225,4 +227,108 @@ void liberar_agenda(ListaContatos**agenda){
      free(aux);
     }
   }
+}
+
+
+
+void menu_editar(){
+  printf("\n");
+  printf("menu de edição de contato\n");
+  printf("digite 1 para editar o nome\n");
+  printf("digite 2 para editar o email\n");
+  printf("digite 3 para editar o telefone\n");
+  printf("digite 4 para editar todas as informações\n");
+  printf("digite 5 para cancelar a ediçao\n");
+  printf("digite 6 para sair!\n");
+}
+
+
+void editar(ListaContatos** agenda, char* nome){
+  ListaContatos* contato = busca(agenda, nome);
+  ListaContatos* remover = NULL;
+
+  if(contato == NULL){
+    return;
+  }
+
+  int sair = 0, opcao = 0, r = 0;
+  char* novoNome = (char*)malloc(sizeof(char)*MAX_CHAR);
+  char* novoEmail = (char*)malloc(sizeof(char)*MAX_CHAR);
+  char* novoTelefone = (char*)malloc(sizeof(char)*MAX_CHAR);
+
+  strcpy(novoNome, contato->info->nome);
+  strcpy(novoEmail,contato->info->email);
+  strcpy(novoTelefone, contato->info->telefone);
+
+  do{
+      menu_editar();
+      opcao = capturaNumero();
+    
+    switch (opcao){
+    case 1:
+      printf("digite o novo nome do contato: ");
+      capturaNome(novoNome);
+      r++;
+      break;
+    case 2:
+      printf("digite o novo email do contato(email@dominio.complemento.complementoopcional): ");
+      capturaEmail(EMAIL_PADRAO, FLAG, novoEmail);
+      strcpy(contato->info->email, novoEmail);
+      break;
+    case 3:
+      printf("digite o telefone do contato(formato:(dd) nnnnn-nnnn): ");
+      capturaTelefone(novoTelefone);
+      strcpy(contato->info->telefone, novoTelefone);
+      break;
+    case 4:
+      printf("digite o novo nome do contato: ");
+      capturaNome(novoNome);
+      printf("digite o novo email do contato(email@dominio.complemento.complementoopcional): ");
+      capturaEmail(EMAIL_PADRAO, FLAG, novoEmail);
+      printf("digite o telefone do contato(formato:(dd) nnnnn-nnnn): ");
+      capturaTelefone(novoTelefone);
+      r++;
+      break;
+    case 5:
+      return;
+      break;
+    case 6:
+      sair = 0;
+      break;
+    default:
+      sair = 1;
+      break;
+    }
+
+    if(sair != 1){
+      printf("\n");
+      printf("Dados:\n");
+      printf("nome: %s\nemail: %s\ntelefone: %s\n", novoNome, novoEmail, novoTelefone);
+      printf("\n");
+      printf("deseja fazer mais alguma alteração ?\nsim-1\nnão-2\n");
+      opcao = capturaNumero();
+      while(opcao != 1 && opcao != 2){
+        printf("deseja fazer mais alguma alteração ?\nsim-1\nnão-2\n");
+        opcao = capturaNumero();
+      }
+
+      if(opcao == 1){
+        sair = 2;
+      }else{
+        sair = 0;
+      }
+    }
+  }while(sair != 0);
+
+  if(r != 0){
+    inserir(agenda, criar_contato(novoNome, novoEmail, novoTelefone));
+    printf("contato atualizado:\n");
+    remover = removeContatos(agenda, nome);
+    free(remover->info);
+    free(remover);
+  }
+
+  free(novoNome);
+  free(novoEmail);
+  free(novoTelefone);
 }
