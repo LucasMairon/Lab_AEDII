@@ -75,9 +75,10 @@ void inserir(ListaContatos** hashAgenda, ListaContatos* contato){
 
 
 void listar_contato(ListaContatos* contato){
-  printf("\n");
+  
   if (contato != NULL){
-   printf("nome: %s\nemail: %s\ntelelefone: %s\n",contato->info->nome,contato->info->email, contato->info->telefone); 
+    printf("\n");
+    printf("nome: %s\nemail: %s\ntelelefone: %s\n",contato->info->nome,contato->info->email, contato->info->telefone); 
   }
 }
 
@@ -88,7 +89,6 @@ void listar_agenda(ListaContatos** agenda){
   for(; i<SIZE_HASH_TABLE; i++){
     contato = agenda[i];
     for(; contato != NULL; contato = contato->prox){
-      printf("\n");
       listar_contato(contato);
     }
   }

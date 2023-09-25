@@ -20,6 +20,7 @@ int main(){
     char* telefone;
     telefone = (char*)malloc(sizeof(char)*MAX_CHAR);
     char* caminho;
+    caminho = (char*)malloc(sizeof(char)*MAX_CHAR);
     do{
         escolha = menu();
 
