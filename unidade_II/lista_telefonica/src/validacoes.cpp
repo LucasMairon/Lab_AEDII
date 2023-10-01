@@ -39,7 +39,7 @@ void capturaEmail(const char* PADRAO,const int FLAG,char* email){
       valor = isvalidEmail(email,PADRAO,FLAG);
       cont++;
     }
-    if(cont > 1){
+    if(cont >= 1){
         printf("validação aceita\n");
     }
    
@@ -51,7 +51,7 @@ int capturaNumero(){
     int i = 0;
     printf("digite uma opcao: ");
     scanf(" %[^\n]",numero);
-    while (numero[i] != '\0'){
+    while(numero[i] != '\0'){
         if (!isdigit(numero[i])){
             return 0;
         }
@@ -84,9 +84,10 @@ void capturaNome(char* string){
       scanf(" %[^\n]",string);
       valor = isvalidName(string);
       cont++;
+     
     
     }
-    if(cont > 1){
+    if(cont >= 1){
         printf("validação aceita\n");
     }
 }
@@ -119,7 +120,7 @@ void capturaTelefone(char* telefone){
     tam = strlen(telefone);
     cont++;
   }
-  if(cont > 1){
+  if(cont >= 1){
         printf("validação aceita\n");
   }
 

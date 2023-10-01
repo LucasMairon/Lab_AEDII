@@ -9,24 +9,20 @@ int main()
   setlocale(LC_ALL, "Portuguese");
 
   ListaContatos *hashAgenda[SIZE_HASH_TABLE];
+  *hashAgenda = (ListaContatos*)malloc(sizeof(ListaContatos)*SIZE_HASH_TABLE);
   iniciar_agenda(hashAgenda);
   ler_agenda(hashAgenda);
   ListaContatos *listaDeContatos = NULL;
   int escolha = 0;
-  char *nome;
-  nome = (char *)malloc(sizeof(char) * MAX_CHAR);
-  char *email;
-  email = (char *)malloc(sizeof(char) * MAX_CHAR);
-  char *telefone;
-  telefone = (char *)malloc(sizeof(char) * MAX_CHAR);
-  char *caminho;
-  caminho = (char*)malloc(sizeof(char)*MAX_CHAR);
-  do
-  {
+  char *nome = (char *)malloc(sizeof(char) * MAX_CHAR);
+  char *email = (char *)malloc(sizeof(char) * MAX_CHAR);
+  char *telefone = (char *)malloc(sizeof(char) * MAX_CHAR);
+  char *caminho = (char*)malloc(sizeof(char)*MAX_CHAR);
+
+  do{
     escolha = menu();
 
-    switch (escolha)
-    {
+    switch (escolha){
     case 1:
 
       printf("\nCriar contato:\n");
@@ -45,6 +41,7 @@ int main()
 
       printf("\nListar agenda:\n");
       listar_agenda(hashAgenda);
+      
     break;
     case 3:
 
@@ -62,6 +59,7 @@ int main()
       capturaNome(nome);
       listaDeContatos = busca(hashAgenda, nome);
       listar_contato(listaDeContatos);
+
     break;
     case 5:
 
@@ -75,9 +73,6 @@ int main()
         free(listaDeContatos);
         printf("\ncontato removido com sucesso\n");
       }
-      else{
-        printf("\nO contato não está na lista\n");
-      }
 
     break;
     case 6:
@@ -85,6 +80,7 @@ int main()
       printf("digite o nome do contato que deseja editar: ");
       capturaNome(nome);
       editar(hashAgenda, nome);
+
     break;
     case 7:
 
@@ -96,12 +92,13 @@ int main()
       free(telefone);
       free(caminho);
       printf("execução finalizada\n");
+
     break;
     default:
-      printf("opção invalida\n");
+      printf("opção inválida\n");
     break;
     }
-  } while (escolha != 7);
+  }while (escolha != 7);
 }
 
 int menu(){

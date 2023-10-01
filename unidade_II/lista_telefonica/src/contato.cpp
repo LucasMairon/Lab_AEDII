@@ -76,25 +76,29 @@ void inserir(ListaContatos** hashAgenda, ListaContatos* contato){
 
 
 void listar_contato(ListaContatos* contato){
-  
-  if (contato != NULL){
+  if(contato != NULL){
     printf("\n");
-    printf("nome: %s\nemail: %s\ntelelefone: %s\n",contato->info->nome,contato->info->email, contato->info->telefone); 
+    printf("nome: %s\nemail: %s\ntelelefone: %s\n",contato->info->nome,contato->info->email, contato->info->telefone);
+    
   }
 }
 
 
 void listar_agenda(ListaContatos** agenda){
   ListaContatos* contato; 
-  int i =0;
+  int cont = 0,i = 0;
   for(; i<SIZE_HASH_TABLE; i++){
     contato = agenda[i];
-    for(; contato != NULL; contato = contato->prox){
-      listar_contato(contato);
+      for(; contato != NULL; contato = contato->prox){
+        cont++;
+        listar_contato(contato);
     }
   }
+  if(cont == 0){
+    printf("sem contatos para listar\n");
+  }
 }
-
+  
 
 void exportar(ListaContatos** hashAgenda, char* caminho){
   int i;
@@ -155,7 +159,7 @@ ListaContatos* busca(ListaContatos** agenda, char* nome){
   int key = hash_multiplicacao(concatena(nome));
 
   if(agenda[key] == NULL){
-    printf("O contato não está na agenda\n");
+    printf("o contato não está na agenda\n");
     return NULL;
   }else if(agenda[key]->ant == NULL && agenda[key]->prox == NULL){
      return agenda[key];

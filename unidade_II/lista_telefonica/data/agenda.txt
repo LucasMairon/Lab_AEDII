@@ -1,24 +1,24 @@
-nome: ana
-email: lidi@gmail.com
-telefone: 84999999999
-nome: costa
-email: lidiana@gmail.com
-telefone: 84999999999
+nome: luiz
+email: luiz@outlook.com.br
+telefone: 84996730123
+nome: joao
+email: joao12@gmail.com
+telefone: 84997364512
+nome: lidia
+email: lidia45@hotmail.com
+telefone: 84991275610
 nome: lidiana
 email: lidi@gmail.com
-telefone: 84999999999
-nome: lidiana
-email: lidi@gmail.com
-telefone: 84999999999
+telefone: 84996510234
 nome: ana regina
-email: lidi@gmail.com
-telefone: 84999999999
+email: anar145@outlook.com
+telefone: 84996152817
 nome: ana gabiela
-email: gmail@gmail.com
-telefone: (84) 99897-6167
+email: anagabi@gmail.com
+telefone: 84123986512
 nome: lucas mairon 
-email: lidi@gmail.com
-telefone: 84999999999
-nome: lidiana costa 
-email: lidi@gmail.com
-telefone: 84999999999
+email: lucas2@gmail.com
+telefone: 84991823015
+nome: lidiana costa
+email: lidianac@gmail.com
+telefone: 84995612304
