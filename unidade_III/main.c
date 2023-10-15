@@ -19,20 +19,18 @@ do{
   switch(escolha){
     case 1:
       printf("Listar cidades e suas vizinhas:\n");
-      // ImprimeGrafo(g);
-      //imprime(g);
-      
+      ImprimeGrafo(g);
     break;
     case 2:
       printf("Buscar cidade:\n");
       printf("digite o nome da cidade que deseja buscar(com nomes em maiusculo): ");
       scanf(" %[^\n]",nomeCidade);
-      //BuscaCidade(g, nomeCidade);
+      BuscaCidade(g, nomeCidade);
     break;
     case 3:
       printf("Sair:\n");
       printf("finalização do programa\n");
-      //liberaGrafo(g);
+      liberaGrafo(g);
     break;
     default:
       printf("\nopção inválida\n");
