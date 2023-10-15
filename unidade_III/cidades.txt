@@ -1,0 +1,167 @@
+0, 59370000, Acari
+1, 59650000, Assú
+2, 59510000, Afonso Bezerra
+3, 59995000, Água Nova
+4, 59965000, Alexandria
+5, 59760000, Almino Afonso
+6, 59507000, Alto do Rodrigues
+7, 59515000, Angicos
+8, 59870000, Antônio Martins
+9, 59700000, Apodi
+10, 59655000, Areia Branca
+11, 59170000, Arez
+12, 59194000, Baía Formosa
+13, 59695000, Baraúna
+14, 59410000, Barcelona
+15, 59555000, Bento Fernandes
+16, 59260000, Boa Saúde
+17, 59528000, Bodó
+18, 59270000, Bom Jesus
+19, 59219000, Brejinho
+20, 59592000, Caiçara do Norte
+21, 59540000, Caiçara do Rio do Vento
+22, 59300000, Caicó
+23, 59680000, Campo Grande
+24, 59230000, Campo Redondo
+25, 59190000, Canguaretama
+26, 59780000, Caraúbas
+27, 59374000, Carnaúba dos Dantas
+28, 59665000, Carnaubais
+29, 59570000, Ceará-Mirim
+30, 59395000, Cerro Corá
+31, 59220000, Coronel Ezequiel
+32, 59930000, Coronel João Pessoa
+33, 59375000, Cruzeta
+34, 59380000, Currais Novos
+35, 59910000, Doutor Severiano
+36, 59905000, Encanto
+37, 59355000, Equador
+38, 59180000, Espírito Santo
+39, 59575000, Extremoz
+40, 59795000, Felipe Guerra
+41, 59517000, Fernando Pedroza
+42, 59335000, Florânia
+43, 59902000, Francisco Dantas
+44, 59890000, Frutuoso Gomes
+45, 59596000, Galinhos
+46, 59173000, Goianinha
+47, 59790000, Governador Dix-Sept Rosado
+48, 59675000, Grossos
+49, 59598000, Guamaré
+50, 59490000, Ielmo Marinho
+51, 59508000, Ipanguaçu
+52, 59315000, Ipueira
+53, 59513000, Itajá
+54, 59855000, Itaú
+55, 59225000, Jaçanã
+56, 59594000, Jandaíra
+57, 59690000, Janduís
+58, 59213000, Japi
+59, 59544000, Jardim de Angicos
+60, 59324000, Jardim de Piranhas
+61, 59343000, Jardim do Seridó
+62, 59550000, João Câmara
+63, 59880000, João Dias
+64, 59980000, José da Penha
+65, 59330000, Jucurutu
+66, 59188000, Jundiá
+67, 59227000, Lagoa d'Anta
+68, 59244000, Lagoa de Pedras
+69, 59430000, Lagoa de Velhos
+70, 59390000, Lagoa Nova
+71, 59247000, Lagoa Salgada
+72, 59535000, Lajes
+73, 59235000, Lajes Pintadas
+74, 59805000, Lucrécia
+75, 59940000, Luís Gomes
+76, 59280001, Macaíba
+77, 59500000, Macau
+78, 59945000, Major Sales
+79, 59970000, Marcelino Vieira
+80, 59800000, Martins
+81, 59580000, Maxaranguape
+82, 59775000, Messias Targino
+83, 59198000, Montanhas
+84, 59182000, Monte Alegre
+85, 59217000, Monte das Gameleiras
+86, 59600001, Mossoró
+87, 59000001, Natal
+88, 59164000, Nísia Floresta
+89, 59215000, Nova Cruz
+90, 59730000, Olho-D'Água do Borges
+91, 59347000, Ouro Branco
+92, 59950000, Paraná
+93, 59660000, Paraú
+94, 59586000, Parazinho
+95, 59360000, Parelhas
+96, 59140001, Parnamirim
+97, 59218000, Passa e Fica
+98, 59259000, Passagem
+99, 59770000, Patu
+100, 59900000, Pau dos Ferros
+101, 59588000, Pedra Grande
+102, 59547000, Pedra Preta
+103, 59530000, Pedro Avelino
+104, 59196000, Pedro Velho
+105, 59504000, Pendências
+106, 59960000, Pilões
+107, 59560000, Poço Branco
+108, 59810000, Portalegre
+109, 59668000, Porto do Mangue
+110, 59582000, Pureza
+111, 59990000, Rafael Fernandes
+112, 59740000, Rafael Godeiro
+113, 59820000, Riacho da Cruz
+114, 59987000, Riacho de Santana
+115, 59470000, Riachuelo
+116, 59578000, Rio do Fogo
+117, 59830000, Rodolfo Fernandes
+118, 59420000, Ruy Barbosa
+119, 59200000, Santa Cruz
+120, 59464000, Santa Maria
+121, 59520000, Santana do Matos
+122, 59350000, Santana do Seridó
+123, 59255000, Santo Antônio
+124, 59590000, São Bento do Norte
+125, 59210000, São Bento do Trairi
+126, 59327000, São Fernando
+127, 59908000, São Francisco do Oeste
+128, 59290001, São Gonçalo do Amarante
+129, 59310000, São João do Sabugi
+130, 59162000, São José de Mipibu
+131, 59275000, São José do Campestre
+132, 59378000, São José do Seridó
+133, 59920000, São Miguel
+134, 59585000, São Miguel do Gostoso
+135, 59460000, São Paulo do Potengi
+136, 59480000, São Pedro
+137, 59518000, São Rafael
+138, 59400000, São Tomé
+139, 59340000, São Vicente
+140, 59250000, Senador Elói de Souza
+141, 59168000, Senador Georgino Avelino
+142, 59245000, Serra Caiada
+143, 59214000, Serra de São Bento
+144, 59663000, Serra do Mel
+145, 59318000, Serra Negra do Norte
+146, 59258000, Serrinha
+147, 59808000, Serrinha dos Pintos
+148, 59856000, Severiano Melo
+149, 59440000, Sítio Novo
+150, 59840000, Taboleiro Grande
+151, 59565000, Taipu
+152, 59240000, Tangará
+153, 59955000, Tenente Ananias
+154, 59338000, Tenente Laurentino Cruz
+155, 59678000, Tibau
+156, 59178000, Tibau do Sul
+157, 59320000, Timbaúba dos Batistas
+158, 59584000, Touros
+159, 59685000, Triunfo Potiguar
+160, 59865000, Umarizal
+161, 59670000, Upanema
+162, 59185000, Várzea
+163, 59925000, Venha-Ver
+164, 59184000, Vera Cruz
+165, 59815000, Viçosa
+166, 59192000, Vila Flor
