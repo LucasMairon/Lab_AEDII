@@ -101,6 +101,51 @@ void BuscaCidade(Grafo *gr, char *nome) {
 }
 
 
+Vertice *cria_vertice(int cep, char *cidade_nome) {
+  Vertice *v = (Vertice *)malloc(sizeof(Vertice));
+  strcpy(v->cityName, cidade_nome);
+  v->cep = cep;
+  v->arestas = NULL;
+  return v;
+}
+
+
+Grafo* preencheVertices(Grafo *gr) {
+  char linha[MAX_CHAR];
+  int CEP, id;
+  char nome[MAX_CHAR];
+  FILE *cidades = fopen("/workspaces/Lab_AEDII/unidade_III/grafo/data/cidades.txt", "r");
+  if (cidades == NULL) {
+    printf("erro na abertura do arquivo!!\n");
+    exit(1);
+  }
+  while (fgets(linha, MAX_CHAR, cidades) != NULL) {
+    sscanf(linha, "%d, %d, %[^\n]", &id, &CEP, nome);
+    gr->g[id] = cria_vertice(CEP, nome);
+  }
+  fclose(cidades);
+  return gr;
+}
+
+
+Vertice *cria_aresta(Vertice *lista, int v) {
+  if (lista == NULL)
+    return NULL;
+  Aresta *aresta = (Aresta *)malloc(sizeof(Aresta));
+  aresta->v = v;
+  aresta->prox = NULL;
+
+  if (lista->arestas == NULL) {
+    lista->arestas = aresta;
+    return lista;
+  }
+  aresta->prox = lista->arestas;
+  lista->arestas = aresta;
+  
+  return lista;
+}
+
+
 Grafo *ler_arquivo_arestas_nome(Grafo *gr) {
   if (!gr)
     return NULL;
@@ -112,7 +157,7 @@ Grafo *ler_arquivo_arestas_nome(Grafo *gr) {
 
   int origem = 0, destino = 0;
 
-  FILE *arestas_arquivo = fopen("arestas_nome.txt", "r");
+  FILE *arestas_arquivo = fopen("/workspaces/Lab_AEDII/unidade_III/grafo/data/arestas_nome.txt", "r");
   if (arestas_arquivo == NULL) {
     printf("erro na abertura do arquivo!!\n");
     exit(1);
@@ -160,4 +205,11 @@ int pegar_vertice(Grafo *gr, char *nome) {
     }
   }
   return -1;
+}
+
+Grafo *iniciar_grafo() {
+  Grafo *g = cria_grafo();
+  g = preencheVertices(g);
+  g = ler_arquivo_arestas_nome(g);
+  return g;
 }

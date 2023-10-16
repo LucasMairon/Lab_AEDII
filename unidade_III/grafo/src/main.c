@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include<stdlib.h>
-#include "grafo.h"
-#include"validacoes.h"
+#include "grafo.c"
+#include"validacoes.c"
 #include<locale.h>
 
 #define MAX_CHAR 100
@@ -10,7 +10,7 @@ int menu();
 int main(){
   system("clear");
   setlocale(LC_ALL, "Portuguese");
-  Grafo* g = iniciar();
+  Grafo* g = iniciar_grafo();
   int escolha = 0;
   char* nomeCidade = (char*)malloc(sizeof(char)*MAX_CHAR);
   
