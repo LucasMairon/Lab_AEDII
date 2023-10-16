@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include<stdlib.h>
-#include "grafo.c"
+#include"grafo.c"
 #include"validacoes.c"
 #include<locale.h>
 
@@ -14,16 +14,20 @@ int main(){
   Grafo* g = iniciar_grafo();
   int escolha = 0, opcao_busca = 0, id = 0;
   char* nomeCidade = (char*)malloc(sizeof(char)*MAX_CHAR);
+  printf("Descrição sobre o grafo:\n");
+  printf("os vertices do grafo representam as cidades do estado Rio Grande do Norte e as arestas representam as cidades vizinhas;\n");
+  printf("quantidade de arestas: %d\n",g->arestas);
+  printf("quantidade de vertices: %d\n",g->vertices);
   
 do{
   escolha = menu();
   switch(escolha){
     case 1:
-      printf("Listar cidades e suas vizinhas:\n");
+      printf("\nListar cidades e suas vizinhas:\n");
       ImprimeGrafo(g);
     break;
     case 2:
-      printf("Buscar cidade:\n");
+      printf("\nBuscar cidade:\n");
       opcao_busca = menu_busca();
       if(opcao_busca == 1){
         printf("digite o nome da cidade que deseja buscar(com nomes em maiusculo): ");
@@ -41,9 +45,10 @@ do{
       
     break;
     case 3:
-      printf("Sair:\n");
-      printf("finalização do programa\n");
+      printf("\nSair:\n");
+      printf("finalização do programa;\n");
       liberaGrafo(g);
+      free(nomeCidade);
     break;
     default:
       printf("\nopção inválida\n");

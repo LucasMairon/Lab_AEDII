@@ -156,6 +156,34 @@ Vertice *cria_aresta(Vertice *lista, int v) {
   return lista;
 }
 
+Grafo *preencher_arestas(Grafo *gr) {
+  if (!gr)
+    return NULL;
+  if (!gr->g)
+    return NULL;
+
+  char linha[MAX_CHAR];
+  int origem = 0, destino = 0;
+  FILE *arestas = fopen("/workspaces/Lab_AEDII/unidade_III/grafo/data/arestas.txt", "r");
+  if (arestas == NULL) {
+    printf("erro na abertura do arquivo!!\n");
+    exit(1);
+  }
+  
+  while (fgets(linha, MAX_CHAR, arestas) != NULL) {
+    sscanf(linha, "%d %d", &origem, &destino);
+     
+
+    if (gr->g[origem] != NULL){
+      gr->g[origem] = cria_aresta(gr->g[origem], destino);
+      gr->arestas++;
+    } else {
+      printf("vertice vazio\n");
+    }
+  }
+  fclose(arestas);
+  return gr;
+}
 
 Grafo *ler_arquivo_arestas_nome(Grafo *gr) {
   if (!gr)
@@ -223,13 +251,15 @@ int pegar_vertice(Grafo *gr, char *nome) {
 Grafo *iniciar_grafo() {
   Grafo *g = cria_grafo();
   g = preencheVertices(g);
-  g = ler_arquivo_arestas_nome(g);
+  g = preencher_arestas(g);
   return g;
 }
 
 
 void informacoes_busca(Grafo* gr){
+  printf("\nformato:");
+  printf("\n[id] - nome\n\n");
   for (int i = 0; i < MAX_TAM_VERTICES; i++){
-    printf("[%d]- %s\n", i, gr->g[i]->cityName);
+    printf("[%d] - %s\n", i, gr->g[i]->cityName);
   }
 }
