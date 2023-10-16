@@ -58,6 +58,7 @@ void liberaGrafo(Grafo *gr) {
   free(gr);
 }
 
+
 void imprimeDadosCidade(int i, Grafo* gr) {
   printf("\nDados da cidade:\n");
   printf("Nome da cidade: %s\n", gr->g[i]->cityName);
@@ -74,6 +75,7 @@ void imprimeDadosCidade(int i, Grafo* gr) {
   printf(";");
 }
 
+
 void ImprimeGrafo(Grafo *gr) {
   if (!gr)
     return;
@@ -85,9 +87,10 @@ void ImprimeGrafo(Grafo *gr) {
   printf("\n");
 }
 
+
 void BuscaCidade(Grafo *gr, char *nome, int id){
   int i = 0, achou = 0;
-  if(id == -1){
+  if(id == -1 && nome != NULL){
     for (; i < MAX_TAM_VERTICES; i++) {
       if (strcmp(gr->g[i]->cityName, nome) == 0) {
         printf("\nDados da cidade buscada:\n");
@@ -205,6 +208,7 @@ Grafo *ler_arquivo_arestas_nome(Grafo *gr) {
   return gr;
 }
 
+
 int pegar_vertice(Grafo *gr, char *nome) {
   int i = 0;
   for (; i < MAX_TAM_VERTICES; i++) {
@@ -215,12 +219,14 @@ int pegar_vertice(Grafo *gr, char *nome) {
   return -1;
 }
 
+
 Grafo *iniciar_grafo() {
   Grafo *g = cria_grafo();
   g = preencheVertices(g);
   g = ler_arquivo_arestas_nome(g);
   return g;
 }
+
 
 void informacoes_busca(Grafo* gr){
   for (int i = 0; i < MAX_TAM_VERTICES; i++){
