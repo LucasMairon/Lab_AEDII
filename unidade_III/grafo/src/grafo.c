@@ -99,3 +99,65 @@ void BuscaCidade(Grafo *gr, char *nome) {
     printf("\nEssa cidade não existe\n");
   }
 }
+
+
+Grafo *ler_arquivo_arestas_nome(Grafo *gr) {
+  if (!gr)
+    return NULL;
+  if (!gr->g)
+    return NULL;
+
+  char linha[MAX_CHAR];
+  char vertice_nome[MAX_CHAR];
+
+  int origem = 0, destino = 0;
+
+  FILE *arestas_arquivo = fopen("arestas_nome.txt", "r");
+  if (arestas_arquivo == NULL) {
+    printf("erro na abertura do arquivo!!\n");
+    exit(1);
+  }
+
+  while (fgets(linha, MAX_CHAR, arestas_arquivo) != NULL) {
+
+    sscanf(linha, " %[^\n]", vertice_nome);
+
+    origem = pegar_vertice(gr, vertice_nome);
+
+    if (origem != -1) {
+
+      while (strcmp(fgets(linha, MAX_CHAR, arestas_arquivo), "\n")) {
+
+        sscanf(linha, " %[^\n]", vertice_nome);
+        destino = pegar_vertice(gr, vertice_nome);
+        if (destino != -1) {
+
+          gr->g[origem] = cria_aresta(gr->g[origem], destino);
+          gr->arestas++;
+        } else {
+          printf("vertice nao encontrado aresta: %s\n", vertice_nome);
+        }
+      }
+    } else {
+      printf("vertice nao encontrado: %s\n", vertice_nome);
+      while (strcmp(fgets(linha, MAX_CHAR, arestas_arquivo), "\n")) {
+        sscanf(linha, " %[^\n]", vertice_nome);
+      }
+    }
+  }
+
+  printf("%d\n", gr->arestas);
+
+  fclose(arestas_arquivo);
+  return gr;
+}
+
+int pegar_vertice(Grafo *gr, char *nome) {
+  int i = 0;
+  for (; i < MAX_TAM_VERTICES; i++) {
+    if (!strcmp(gr->g[i]->cityName, nome)) {
+      return i;
+    }
+  }
+  return -1;
+}

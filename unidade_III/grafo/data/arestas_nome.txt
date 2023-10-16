@@ -1,0 +1,1194 @@
+Acari
+Currais Novos
+São Vicente
+Carnaúba dos Dantas
+São José do Seridó
+Cruzeta
+
+Natal
+Extremoz
+Parnamirim
+Macaíba
+São Gonçalo do Amarante
+
+Mossoró
+Tibau
+Grossos
+Areia Branca
+Serra do Mel
+Assú
+Upanema
+Governador Dix-Sept Rosado
+Baraúna
+
+Parnamirim
+Natal
+Macaíba
+São José de Mipibu
+Nísia Floresta
+
+São Gonçalo do Amarante
+Natal
+Macaíba
+Ceará-Mirim
+Extremoz
+Ielmo Marinho
+
+Macaíba
+Natal
+Parnamirim
+São José de Mipibu
+Vera Cruz
+Bom Jesus
+São Pedro
+Ielmo Marinho
+São Gonçalo do Amarante
+Boa Saúde
+
+Ceará-Mirim
+Maxaranguape
+São Gonçalo do Amarante
+Extremoz
+Ielmo Marinho
+Taipu
+
+Extremoz
+Ceará-Mirim
+Natal
+São Gonçalo do Amarante
+
+Caicó
+Jucurutu
+Florânia
+São João do Sabugi
+Cruzeta
+São José do Seridó
+Jardim do Seridó
+Ouro Branco
+Serra Negra do Norte
+Timbaúba dos Batistas
+São Fernando
+
+Assú
+Serra do Mel
+Carnaubais
+Mossoró
+Upanema
+Paraú
+Jucurutu
+São Rafael
+Itajá
+Ipanguaçu
+Afonso Bezerra
+Alto do Rodrigues
+
+Santa Cruz
+Tangará
+São Bento do Trairi
+Lajes Pintadas
+Campo Redondo
+Japi
+Sítio Novo
+
+São José de Mipibu
+Macaíba
+Parnamirim
+Arez
+Brejinho
+Espírito Santo
+Jundiá
+Nísia Floresta
+Monte Alegre
+Vera Cruz
+
+Currais Novos
+Lagoa Nova
+Cerro Corá
+Campo Redondo
+São Tomé
+São Vicente
+Acari
+
+Apodi
+Governador Dix-Sept Rosado
+Felipe Guerra
+Caraúbas
+Umarizal
+Riacho da Cruz
+Itaú
+Severiano Melo
+
+Nova Cruz
+Santo Antônio
+Várzea
+Espírito Santo
+Pedro Velho
+Montanhas
+Caiçara
+Passa e Fica
+Lagoa d'Anta
+
+João Câmara
+Parazinho
+Bento Fernandes
+Touros
+Pureza
+Poço Branco
+Jandaíra
+Pedra Preta
+Jardim de Angicos
+
+Touros
+Pureza
+Rio do Fogo
+São Miguel do Gostoso
+João Câmara
+Parazinho
+
+Nísia Floresta
+Parnamirim
+São José de Mipibu
+Arez
+Senador Georgino Avelino
+
+Pau dos Ferros
+São Francisco do Oeste
+Francisco Dantas
+Rafael Fernandes
+Marcelino Vieira
+Serrinha dos Pintos
+Antônio Martins
+Francisco Dantas
+Encanto
+
+Canguaretama
+Vila Flor
+Tibau do Sul
+Goianinha
+Espírito Santo
+Baía Formosa
+Pedro Velho
+
+Macau
+Guamaré
+Porto do Mangue
+Afonso Bezerra
+Pedro Avelino
+Pendências
+
+Baraúna
+Mossoró
+Governador Dix-Sept Rosado
+
+Goianinha
+Canguaretama
+Espírito Santo
+Tibau do Sul
+
+Areia Branca
+Serra do Mel
+Porto do Mangue
+Grossos
+Mossoró
+
+Santo Antônio
+São José do Campestre
+Serrinha
+Lagoa de Pedras
+Passagem
+Brejinho
+Várzea
+Nova Cruz
+Lagoa d'Anta
+
+São Miguel
+Doutor Severiano
+Venha-Ver
+Coronel João Pessoa
+Encanto
+
+Monte Alegre
+São José de Mipibu
+Vera Cruz
+Jundiá
+Lagoa Salgada
+Lagoa de Pedras
+Brejinho
+
+Parelhas
+Carnaúba dos Dantas
+Jardim do Seridó
+Equador
+Jardim do Seridó
+Santana do Seridó
+
+Caraúbas
+Apodi
+Felipe Guerra
+Governador Dix-Sept Rosado
+Upanema
+Campo Grande
+Janduís
+Patu
+Olho-D'Água do Borges
+
+Jucurutu
+Assú
+Triunfo Potiguar
+São Rafael
+São Fernando
+Caicó
+Florânia
+Santana do Matos
+Jardim de Piranhas
+Campo Grande
+
+São Paulo do Potengi
+São Pedro
+Santa Maria
+Barcelona
+Lagoa de Velhos
+Senador Elói de Souza
+Riachuelo
+
+Guamaré
+Macau
+Galinhos
+Pedro Avelino
+
+Tangará
+São José do Campestre
+Lagoa de Velhos
+Sítio Novo
+Santa Cruz
+Japi
+
+Lagoa Nova
+Currais Novos
+Bodó
+Cerro Corá
+São Vicente
+Santana do Matos
+
+Ipanguaçu
+Assú
+Afonso Bezerra
+Itajá
+Angicos
+
+Poço Branco
+Pureza
+Taipu
+Ielmo Marinho
+Bento Fernandes
+João Câmara
+
+Pendências
+Macau
+Alto do Rodrigues
+Afonso Bezerra
+Carnaubais
+
+Jardim de Piranhas
+São Fernando
+Jucurutu
+Serra Negra do Norte
+
+Pedro Velho
+Canguaretama
+Espírito Santo
+Várzea
+Nova Cruz
+Montanhas
+
+Upanema
+Mossoró
+Assú
+Paraú
+Campo Grande
+Caraúbas
+Governador Dix-Sept Rosado
+
+Alto do Rodrigues
+Pendências
+Afonso Bezerra
+Assú
+Carnaubais
+Angicos
+Itajá
+Serra do Mel
+
+Tibau do Sul
+Arez
+Senador Georgino Avelino
+Canguaretama
+Vila Flor
+
+Arez
+Nísia Floresta
+São José de Mipibu
+Espírito Santo
+Goianinha
+Tibau do Sul
+Senador Georgino Avelino
+
+Ielmo Marinho
+Bento Fernandes
+Taipu
+São Pedro
+Macaíba
+São Gonçalo do Amarante
+Santa Maria
+
+Passa e Fica
+São José do Campestre
+Lagoa d'Anta
+Nova Cruz
+Serra de São Bento
+
+Alexandria
+Pilões
+Antônio Martins
+João Dias
+Marcelino Vieira
+Tenente Ananias
+
+Governador Dix-Sept Rosado
+Baraúna
+Mossoró
+Caraúbas
+Felipe Guerra
+Apodi
+Upanema
+Mossoró
+Upanema
+Felipe Guerra
+
+São José do Campestre
+Boa Saúde
+Japi
+Lagoa d'Anta
+Monte das Gameleiras
+Santo Antônio
+Serra de São Bento
+Serrinha
+Tangará
+
+Brejinho
+Monte Alegre
+São José de Mipibu
+Jundiá
+Passagem
+Santo Antônio
+Lagoa de Pedras
+
+Patu
+Caraúbas
+Janduís
+Messias Targino
+Olho-D'Água do Borges
+Rafael Godeiro
+Almino Afonso
+
+Vera Cruz
+Monte Alegre
+Macaíba
+Lagoa Salgada
+Boa Saúde
+São José de Mipibu
+Bom Jesus
+
+Maxaranguape
+Ceará-Mirim
+Taipu
+Pureza
+Rio do Fogo
+
+Jardim do Seridó
+São José do Seridó
+Acari
+Ouro Branco
+Santana do Seridó
+Parelhas
+Carnaúba dos Dantas
+Caicó
+
+Taipu
+Pureza
+Ielmo Marinho
+Ceará-Mirim
+Poço Branco
+
+Serra do Mel
+Areia Branca
+Porto do Mangue
+Carnaubais
+Assú
+Mossoró
+
+Santana do Matos
+Angicos
+Fernando Pedroza
+Itajá
+São Vicente
+Florânia
+Tenente Laurentino Cruz
+Lagoa Nova
+Bodó
+Cerro Corá
+São Rafael
+Jucurutu
+
+Angicos
+Ipanguaçu
+Afonso Bezerra
+Pedro Avelino
+Lajes
+Fernando Pedroza
+Santana do Matos
+Itajá
+
+Lajes
+Jandaíra
+Cerro Corá
+São Tomé
+Caiçara do Rio do Vento
+Jardim de Angicos
+Pedra Preta
+Angicos
+Fernando Pedroza
+Pedro Avelino
+
+Campo Redondo
+São Tomé
+Lajes Pintadas
+Currais Novos
+Santa Cruz
+Coronel Ezequiel
+
+Montanhas
+Pedro Velho
+Pedro Velho
+Nova Cruz
+
+Cerro Corá
+Currais Novos
+Lagoa Nova
+Bodó
+São Tomé
+Lajes
+Angicos
+Santana do Matos
+
+São Tomé
+Cerro Corá
+Currais Novos
+Lajes Pintadas
+Campo Redondo
+Sítio Novo
+Barcelona
+Ruy Barbosa
+Caiçara do Rio do Vento
+Lajes
+
+Afonso Bezerra
+Pedro Avelino
+Angicos
+Pendências
+Alto do Rodrigues
+
+Rio do Fogo
+Touros
+Maxaranguape
+Pureza
+
+Carnaubais
+Porto do Mangue
+Serra do Mel
+Macau
+Pendências
+Alto do Rodrigues
+Assú
+
+Tenente Ananias
+Marcelino Vieira
+Alexandria
+Paraná
+José da Penha
+
+Serra Caiada
+Senador Elói de Souza
+Lagoa de Velhos
+Boa Saúde
+Tangará
+
+Grossos
+Areia Branca
+Tibau
+Serra do Mel
+
+Umarizal
+Apodi
+Caraúbas
+Olho-D'Água do Borges
+Rafael Godeiro
+Almino Afonso
+Lucrécia
+Martins
+Viçosa
+Riacho da Cruz
+
+Espírito Santo
+Goianinha
+Várzea
+Santo Antônio
+
+São Miguel do Gostoso
+Touros
+Pedra Grande
+Parazinho
+
+Boa Saúde
+Bom Jesus
+Macaíba
+Serrinha
+Lagoa de Pedras
+São José do Campestre
+Lagoa Salgada
+Monte Alegre
+Vera Cruz
+Serra Caiada
+Senador Elói de Souza
+Tangará
+
+Bom Jesus
+Macaíba
+Senador Elói de Souza
+São Pedro
+Boa Saúde
+
+Luís Gomes
+Riacho de Santana
+José da Penha
+Major Sales
+Paraná
+Venha-Ver
+Coronel João Pessoa
+
+Florânia
+Santana do Matos
+Cruzeta
+Acari
+Caicó
+Tenente Laurentino Cruz
+São Vicente
+Jucurutu
+
+Pureza
+Touros
+Rio do Fogo
+Maxaranguape
+Ceará-Mirim
+Taipu
+Poço Branco
+João Câmara
+
+Campo Grande
+Upanema
+Jucurutu
+Triunfo Potiguar
+Paraú
+Caraúbas
+Janduís
+Messias Targino
+
+Baía Formosa
+Canguaretama
+
+Jaçanã
+Coronel Ezequiel
+São Bento do Trairi
+
+Martins
+Umarizal
+Viçosa
+Antônio Martins
+Serrinha dos Pintos
+Lucrécia
+Frutuoso Gomes
+Portalegre
+
+Marcelino Vieira
+Pau dos Ferros
+Rafael Fernandes
+Tenente Ananias
+Pilões
+Antônio Martins
+Alexandria
+José da Penha
+Rafael Fernandes
+
+Lagoa Salgada
+Vera Cruz
+Monte Alegre
+Monte Alegre
+Boa Saúde
+Lagoa de Pedras
+Serrinha
+
+Carnaúba dos Dantas
+Jardim do Seridó
+Acari
+Parelhas
+
+Riachuelo
+São Paulo do Potengi
+Barcelona
+Ruy Barbosa
+Jardim de Angicos
+Bento Fernandes
+Santa Maria
+
+São Rafael
+Itajá
+Assú
+Jucurutu
+Santana do Matos
+
+Serra Negra do Norte
+Jardim de Piranhas
+Caicó
+Timbaúba dos Batistas
+São João do Sabugi
+
+Cruzeta
+Florânia
+São José do Seridó
+Acari
+Caicó
+
+Portalegre
+Taboleiro Grande
+Riacho da Cruz
+Serrinha dos Pintos
+Viçosa
+Martins
+Francisco Dantas
+
+Itajá
+Assú
+Ipanguaçu
+São Rafael
+Paraú
+Angicos
+Santana do Matos
+
+Lagoa de Pedras
+Brejinho
+Monte Alegre
+Lagoa Salgada
+Boa Saúde
+Santo Antônio
+Serrinha
+
+Antônio Martins
+Martins
+Frutuoso Gomes
+Serrinha dos Pintos
+Pilões
+Alexandria
+João Dias
+Almino Afonso
+Marcelino Vieira
+Pau dos Ferros
+
+Doutor Severiano
+São Miguel
+Encanto
+
+Jandaíra
+João Câmara
+Parazinho
+Pedra Preta
+Lajes
+Pedro Avelino
+Caiçara do Norte
+Galinhos
+
+Lagoa d'Anta
+Nova Cruz
+Passa e Fica
+Santo Antônio
+São José do Campestre
+Serrinha
+
+Pedro Avelino
+Afonso Bezerra
+Angicos
+Lajes
+Jandaíra
+Guamaré
+Galinhos
+Macau
+Pendências
+
+Caiçara do Norte
+São Bento do Norte
+Parazinho
+Galinhos
+
+Porto do Mangue
+Areia Branca
+Serra do Mel
+Carnaubais
+Macau
+
+São Vicente
+Lagoa Nova
+Santana do Matos
+Cruzeta
+Acari
+Currais Novos
+Florânia
+Tenente Laurentino Cruz
+
+São João do Sabugi
+Caicó
+Ipueira
+Serra Negra do Norte
+
+Serrinha
+Santo Antônio
+Lagoa de Pedras
+Lagoa Salgada
+Boa Saúde
+São José do Campestre
+
+Senador Elói de Souza
+Boa Saúde
+Bom Jesus
+São Paulo do Potengi
+Serra Caiada
+Lagoa de Velhos
+
+Equador
+Parelhas
+Santana do Seridó
+
+Tenente Laurentino Cruz
+Florânia
+Santana do Matos
+São Vicente
+
+Felipe Guerra
+Apodi
+Caraúbas
+Governador Dix-Sept Rosado
+
+José da Penha
+Riacho de Santana
+Marcelino Vieira
+Tenente Ananias
+Paraná
+Major Sales
+Luís Gomes
+
+São Pedro
+São Paulo do Potengi
+Bom Jesus
+Macaíba
+Santa Maria
+Ielmo Marinho
+Senador Elói de Souza
+
+Itaú
+Apodi
+Riacho da Cruz
+Taboleiro Grande
+Rodolfo Fernandes
+Severiano Melo
+
+Serra de São Bento
+São José do Campestre
+Monte das Gameleiras
+Lagoa d'Anta
+Passa e Fica
+
+Encanto
+Água Nova
+Rafael Fernandes
+Pau dos Ferros
+Doutor Severiano
+São Miguel
+Coronel João Pessoa
+
+Santa Maria
+Bento Fernandes
+São Paulo do Potengi
+Ielmo Marinho
+São Pedro
+Riachuelo
+
+Sítio Novo
+Barcelona
+Lagoa de Velhos
+São Tomé
+Tangará
+Santa Cruz
+Lagoa de Velhos
+Tangará
+São Tomé
+Santa Cruz
+
+Bento Fernandes
+Poço Branco
+João Câmara
+Taipu
+Ielmo Marinho
+Santa Maria
+Riachuelo
+
+Várzea
+Jundiá
+Nova Cruz
+Espírito Santo
+Santo Antônio
+Passagem
+
+Coronel Ezequiel
+Campo Redondo
+Santa Cruz
+Jaçanã
+São Bento do Trairi
+
+Parazinho
+João Câmara
+São Bento do Norte
+Caiçara do Norte
+Pedra Grande
+Jandaíra
+São Miguel do Gostoso
+Touros
+
+Janduís
+Campo Grande
+Messias Targino
+Patu
+Caraúbas
+
+Rafael Fernandes
+Encanto
+Pau dos Ferros
+Marcelino Vieira
+Água Nova
+Riacho de Santana
+
+Japi
+São Bento do Trairi
+Tangará
+Monte das Gameleiras
+São José do Campestre
+Santa Cruz
+
+Coronel João Pessoa
+São Miguel
+Luís Gomes
+Venha-Ver
+Riacho de Santana
+Água Nova
+Encanto
+
+Serrinha dos Pintos
+Portalegre
+Francisco Dantas
+Antônio Martins
+Martins
+Antônio Martins
+Pau dos Ferros
+Francisco Dantas
+
+Ouro Branco
+Jardim do Seridó
+Várzea
+Santana do Seridó
+Caicó
+
+Lajes Pintadas
+São Tomé
+Santa Cruz
+Campo Redondo
+
+Almino Afonso
+Patu
+Rafael Godeiro
+Lucrécia
+Frutuoso Gomes
+Antônio Martins
+João Dias
+Umarizal
+
+São José do Seridó
+Cruzeta
+Jardim do Seridó
+Acari
+Caicó
+
+Messias Targino
+Patu
+Janduís
+Campo Grande
+
+São Bento do Trairi
+Santa Cruz
+Japi
+Coronel Ezequiel
+Jaçanã
+
+Senador Georgino Avelino
+Nísia Floresta
+Tibau do Sul
+Arez
+Nísia Floresta
+
+Rodolfo Fernandes
+Severiano Melo
+Itaú
+São Francisco do Oeste
+Taboleiro Grande
+
+Paraná
+José da Penha
+Tenente Ananias
+Luís Gomes
+Major Sales
+
+São Francisco do Oeste
+Rodolfo Fernandes
+Pau dos Ferros
+Francisco Dantas
+Taboleiro Grande
+
+Olho-D'Água do Borges
+Caraúbas
+Apodi
+Rafael Godeiro
+Patu
+Umarizal
+
+Venha-Ver
+São Miguel
+Coronel João Pessoa
+Luís Gomes
+Coronel João Pessoa
+
+Riacho de Santana
+Água Nova
+Rafael Fernandes
+Marcelino Vieira
+José da Penha
+Luís Gomes
+Coronel João Pessoa
+
+Tibau
+Grossos
+Mossoró
+
+Major Sales
+José da Penha
+Paraná
+Luís Gomes
+
+Frutuoso Gomes
+Almino Afonso
+Antônio Martins
+Martins
+Lucrécia
+
+Lucrécia
+Umarizal
+Frutuoso Gomes
+Almino Afonso
+Martins
+
+Barcelona
+Ruy Barbosa
+Riachuelo
+São Tomé
+Sítio Novo
+São Paulo do Potengi
+Lagoa de Velhos
+
+Jundiá
+São José de Mipibu
+Espírito Santo
+Várzea
+Passagem
+Brejinho
+Monte Alegre
+
+Pilões
+Antônio Martins
+Alexandria
+Marcelino Vieira
+
+Paraú
+Upanema
+Assú
+Triunfo Potiguar
+Campo Grande
+Jucurutu
+
+Caiçara do Rio do Vento
+Jardim de Angicos
+Bento Fernandes
+Riachuelo
+Ruy Barbosa
+São Tomé
+Lajes
+
+Riacho da Cruz
+Itaú
+Viçosa
+Portalegre
+Umarizal
+Apodi
+Taboleiro Grande
+
+São Fernando
+Jucurutu
+Caicó
+Timbaúba dos Batistas
+Jardim de Piranhas
+
+Ruy Barbosa
+Riachuelo
+Caiçara do Rio do Vento
+São Tomé
+Barcelona
+
+Água Nova
+Encanto
+Riacho de Santana
+Rafael Fernandes
+Coronel João Pessoa
+
+Triunfo Potiguar
+Paraú
+Jucurutu
+Campo Grande
+
+Rafael Godeiro
+Patu
+Olho-D'Água do Borges
+Almino Afonso
+Lucrécia
+Umarizal
+
+Pedra Grande
+São Miguel do Gostoso
+Parazinho
+São Bento do Norte
+
+Vila Flor
+Tibau do Sul
+Canguaretama
+
+Passagem
+Jundiá
+Brejinho
+Várzea
+Santo Antônio
+
+Fernando Pedroza
+Angicos
+Lajes
+Cerro Corá
+Santana do Matos
+
+Galinhos
+Caiçara do Norte
+Guamaré
+Jandaíra
+
+Francisco Dantas
+Taboleiro Grande
+Portalegre
+Serrinha dos Pintos
+Pau dos Ferros
+São Francisco do Oeste
+
+Lagoa de Velhos
+São Paulo do Potengi
+Sítio Novo
+Barcelona
+Serra Caiada
+
+São Bento do Norte
+Jandaíra
+Parazinho
+Caiçara do Norte
+Galinhos
+
+Santana do Seridó
+Equador
+Ouro Branco
+Parelhas
+
+João Dias
+Antônio Martins
+Almino Afonso
+Alexandria
+
+Jardim de Angicos
+Jandaíra
+Caiçara do Rio do Vento
+João Câmara
+Pedra Preta
+
+Taboleiro Grande
+Rodolfo Fernandes
+Itaú
+Portalegre
+Francisco Dantas
+Riacho da Cruz
+Rodolfo Fernandes
+São Francisco do Oeste
+Francisco Dantas
+
+Pedra Preta
+Jandaíra
+Lajes
+Jardim de Angicos
+Caiçara do Rio do Vento
+João Câmara
+
+Timbaúba dos Batistas
+Caicó
+São Fernando
+Jardim de Piranhas
+Serra Negra do Norte
+
+Ipueira
+São João do Sabugi
+
+Bodó
+Santana do Matos
+Cerro Corá
+Lagoa Nova
+
+Severiano Melo
+Itaú
+Rodolfo Fernandes
+Apodi
+
+Monte das Gameleiras
+Serra de São Bento
+Japi
+São José do Campestre
+
+Viçosa
+Riacho da Cruz
+Martins
+Umarizal
+Portalegre
+
