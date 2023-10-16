@@ -6,12 +6,13 @@
 
 #define MAX_CHAR 100
 int menu();
+int menu_busca();
 
 int main(){
   system("clear");
   setlocale(LC_ALL, "Portuguese");
   Grafo* g = iniciar_grafo();
-  int escolha = 0;
+  int escolha = 0, opcao_busca = 0, id = 0;
   char* nomeCidade = (char*)malloc(sizeof(char)*MAX_CHAR);
   
 do{
@@ -23,9 +24,21 @@ do{
     break;
     case 2:
       printf("Buscar cidade:\n");
-      printf("digite o nome da cidade que deseja buscar(com nomes em maiusculo): ");
-      scanf(" %[^\n]",nomeCidade);
-      BuscaCidade(g, nomeCidade);
+      opcao_busca = menu_busca();
+      if(opcao_busca == 1){
+        printf("digite o nome da cidade que deseja buscar(com nomes em maiusculo): ");
+        scanf(" %[^\n]",nomeCidade);
+        BuscaCidade(g, nomeCidade, -1);
+      }else if (opcao_busca == 2){
+        printf("digite o id da cidade que deseja buscar(com nomes em maiusculo): ");
+        id = capturaNumero();
+        BuscaCidade(g, NULL, id);
+      }else if (opcao_busca == 3){
+        informacoes_busca(g);
+      }else{
+        printf("opção invalida\n");
+      }
+      
     break;
     case 3:
       printf("Sair:\n");
@@ -48,4 +61,11 @@ int menu(){
   return capturaNumero();
 }
 
+int menu_busca(){
+  printf("\n");
+  printf("1 - Buscar por nome\n");
+  printf("2 - Buscar por Id\n");
+  printf("3 - informações de busca\n");
+  return capturaNumero();
+}
 

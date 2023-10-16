@@ -4,7 +4,7 @@ typedef struct aresta Aresta;
 
 Grafo* cria_grafo();
 
-void BuscaCidade(Grafo *gr, char *nome);
+void BuscaCidade(Grafo *gr, char *nome, int id);
 
 void ImprimeGrafo(Grafo *gr);
 

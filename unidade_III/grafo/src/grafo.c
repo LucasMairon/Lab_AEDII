@@ -85,16 +85,24 @@ void ImprimeGrafo(Grafo *gr) {
   printf("\n");
 }
 
-void BuscaCidade(Grafo *gr, char *nome) {
+void BuscaCidade(Grafo *gr, char *nome, int id){
   int i = 0, achou = 0;
-  for (; i < MAX_TAM_VERTICES; i++) {
-    if (strcmp(gr->g[i]->cityName, nome) == 0) {
-      printf("\nDados da cidade buscada:\n");
-      printf("Nome: %s\n", gr->g[i]->cityName);
-      printf("CEP: %d\n", gr->g[i]->cep);
-      achou++;
+  if(id == -1){
+    for (; i < MAX_TAM_VERTICES; i++) {
+      if (strcmp(gr->g[i]->cityName, nome) == 0) {
+        printf("\nDados da cidade buscada:\n");
+        printf("Nome: %s\n", gr->g[i]->cityName);
+        printf("CEP: %d\n", gr->g[i]->cep);
+        achou++;
+      }
     }
+  }else if (id >=0 && id < MAX_TAM_VERTICES){
+      printf("\nDados da cidade buscada:\n");
+      printf("Nome: %s\n", gr->g[id]->cityName);
+      printf("CEP: %d\n", gr->g[id]->cep);
+      achou++;
   }
+
   if (achou == 0) {
     printf("\nEssa cidade não existe\n");
   }
@@ -212,4 +220,10 @@ Grafo *iniciar_grafo() {
   g = preencheVertices(g);
   g = ler_arquivo_arestas_nome(g);
   return g;
+}
+
+void informacoes_busca(Grafo* gr){
+  for (int i = 0; i < MAX_TAM_VERTICES; i++){
+    printf("[%d]- %s\n", i, gr->g[i]->cityName);
+  }
 }
