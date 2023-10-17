@@ -10,7 +10,7 @@ int capturaNumero(){
     scanf(" %[^\n]",numero);
     while(numero[i] != '\0'){
         if (!isdigit(numero[i])){
-            return 0;
+            return -1;
         }
         i++;
     }

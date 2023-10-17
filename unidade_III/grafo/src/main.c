@@ -34,9 +34,12 @@ do{
         scanf(" %[^\n]",nomeCidade);
         BuscaCidade(g, nomeCidade, -1);
       }else if (opcao_busca == 2){
-        printf("digite o id da cidade que deseja buscar(com nomes em maiusculo): ");
+        printf("digite o id da cidade que deseja buscar: ");
         id = capturaNumero();
-        BuscaCidade(g, NULL, id);
+        if(id != -1)
+          BuscaCidade(g, NULL, id);
+        else
+          printf("opção invalida\n");
       }else if (opcao_busca == 3){
         informacoes_busca(g);
       }else{

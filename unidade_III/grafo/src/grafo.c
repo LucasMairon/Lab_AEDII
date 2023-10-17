@@ -89,26 +89,23 @@ void ImprimeGrafo(Grafo *gr) {
 
 
 void BuscaCidade(Grafo *gr, char *nome, int id){
-  int i = 0, achou = 0;
+  int i = 0;
   if(id == -1 && nome != NULL){
     for (; i < MAX_TAM_VERTICES; i++) {
       if (strcmp(gr->g[i]->cityName, nome) == 0) {
         printf("\nDados da cidade buscada:\n");
         printf("Nome: %s\n", gr->g[i]->cityName);
         printf("CEP: %d\n", gr->g[i]->cep);
-        achou++;
       }
     }
   }else if (id >=0 && id < MAX_TAM_VERTICES){
       printf("\nDados da cidade buscada:\n");
       printf("Nome: %s\n", gr->g[id]->cityName);
       printf("CEP: %d\n", gr->g[id]->cep);
-      achou++;
-  }
-
-  if (achou == 0) {
+  }else{
     printf("\nEssa cidade não existe\n");
   }
+
 }
 
 
