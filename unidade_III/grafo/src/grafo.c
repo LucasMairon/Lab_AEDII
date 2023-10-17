@@ -252,9 +252,6 @@ Grafo *iniciar_grafo() {
   Grafo *g = cria_grafo();
   g = preencheVertices(g);
   g = preencher_arestas(g);
-  //imprimir_submatriz_adj(g, 0);
-  //imprimir_matriz_adj(g);
-  printf("\nfim\n");
   return g;
 }
 
@@ -265,44 +262,4 @@ void informacoes_busca(Grafo* gr){
   for (int i = 0; i < MAX_TAM_VERTICES; i++){
     printf("[%d] - %s\n", i, gr->g[i]->cityName);
   }
-}
-
-
-int verifica_aresta_matriz_adj(Grafo* gr, int v, int a){
-  if(v == a) return 0;
-
-  Aresta* aresta = gr->g[v]->arestas;
-
-  for ( ; aresta != NULL; aresta = aresta->prox){
-    if (aresta->v == a){
-      return 1;
-    }
-  }
-  return 0;
-}
-
-void imprimir_matriz_adj(Grafo* gr){
-  int i = 0, j = 0;
-
-  // for ( i = 0; i < MAX_TAM_VERTICES; i++){
-  //   printf("V(%d) ", i);
-  // }
-  
-  for ( i = 0; i < MAX_TAM_VERTICES; i++){
-    printf("V(%d): ", i);
-    for ( j = 0; j < MAX_TAM_VERTICES; j++){
-      printf("%d ", verifica_aresta_matriz_adj(gr,i,j));
-    }
-    printf("\n");
-  }
-}
-
-void imprimir_submatriz_adj(Grafo* gr, int id){
-  
-  int i = 0;
-  printf("      V(%d)\n", id);
-  for ( i = 0; i < MAX_TAM_VERTICES; i++){
-    printf("V(%d):  %d\n",i,verifica_aresta_matriz_adj(gr, id, i));
-  }
-  
 }
